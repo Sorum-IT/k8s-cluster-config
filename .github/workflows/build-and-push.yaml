@@ -35,4 +35,4 @@ jobs:
 
       - name: publish chart to acr
         run: |
-          helm push ./k8s-cluster-config-${{ steps.chart_version.outputs.result }}.tgz oci://ghcr.io/sorum-it
+          helm push ./k8s-cluster-config-${{ steps.chart_version.outputs.result }}.tgz oci://ghcr.io/sorum-it/k8s-cluster-config
