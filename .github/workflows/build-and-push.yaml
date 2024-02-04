@@ -6,6 +6,9 @@ on:
 env:
   HELM_EXPERIMENTAL_OCI: 1
 
+permissions:
+  packages: write
+
 jobs:
   build-and-publish:
     name: publish gcr
