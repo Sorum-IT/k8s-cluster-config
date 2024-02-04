@@ -1,0 +1,4 @@
+*.tgz
+*.lock
+build
+charts
