@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  vault:
+  - apiVersion: v2
+    created: "2024-02-05T20:23:21.774899125Z"
+    dependencies:
+    - name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.27.0
+    digest: eb52de17c253ebe227e1a043ddfa1af29e54d48cc23f862c4e566b25791aa9b0
+    name: vault
+    urls:
+    - https://github.com/Sorum-IT/k8s-cluster-config/releases/download/vault-0.0.1/vault-0.0.1.tgz
+    version: 0.0.1
+generated: "2024-02-05T20:23:21.774907601Z"
