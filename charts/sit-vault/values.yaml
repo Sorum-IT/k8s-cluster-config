@@ -4,9 +4,6 @@ vault:
   ui:
     enabled: true
     serviceType: NodePort
-    externalPort: 80
-    targetPort: 8200
-    serviceNodePort: 30001
   server:
     standalone:
       enabled: true
