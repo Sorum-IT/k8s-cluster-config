@@ -1,5 +1,17 @@
 apiVersion: v1
 entries:
+  sit-vault:
+  - apiVersion: v2
+    created: "2024-02-05T20:45:28.74137759Z"
+    dependencies:
+    - name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.27.0
+    digest: b5a0cbcd132475fb59e11a433522e6ebe3d8b31f092d6336ef286fb21b2a580a
+    name: sit-vault
+    urls:
+    - https://github.com/Sorum-IT/k8s-cluster-config/releases/download/sit-vault-0.0.1/sit-vault-0.0.1.tgz
+    version: 0.0.1
   vault:
   - apiVersion: v2
     created: "2024-02-05T20:23:21.774899125Z"
@@ -12,4 +24,4 @@ entries:
     urls:
     - https://github.com/Sorum-IT/k8s-cluster-config/releases/download/vault-0.0.1/vault-0.0.1.tgz
     version: 0.0.1
-generated: "2024-02-05T20:23:21.774907601Z"
+generated: "2024-02-05T20:45:28.741387849Z"
