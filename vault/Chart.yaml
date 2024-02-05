@@ -1,6 +1,6 @@
 apiVersion: v2
 version: 0.0.1
-name: k8s-cluster-config
+name: vault
 dependencies:
   - name: vault
     version: 0.27.0

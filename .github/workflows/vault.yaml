@@ -1,6 +1,8 @@
-name: Build and publish a Docker image to ghcr.io
+name: Build and publish Vault chart ghcr.io
 on:
   push:
+    paths:
+      - vault/**
     branches:
       - main
 env:
@@ -29,14 +31,14 @@ jobs:
 
       - name: save helm chart to local registry
         run: |
-          helm package . --dependency-update
+          helm package vault --dependency-update
 
       - name: Get chart version
         id: chart_version
         uses: mikefarah/yq@master
         with:
-          cmd: yq '.version' Chart.yaml
+          cmd: yq '.version' vault/Chart.yaml
 
       - name: publish chart to acr
         run: |
-          helm push ./k8s-cluster-config-${{ steps.chart_version.outputs.result }}.tgz oci://ghcr.io/sorum-it
+          helm push ./vault-${{ steps.chart_version.outputs.result }}.tgz oci://ghcr.io/sorum-it
