@@ -1,6 +1,6 @@
 vault:
   global:
-    namespace: vault
+    namespace: sit-vault
   ui:
     enabled: true
   server:
