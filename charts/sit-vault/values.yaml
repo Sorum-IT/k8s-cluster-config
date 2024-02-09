@@ -4,6 +4,7 @@ vault:
   ui:
     enabled: true
     serviceType: NodePort
+    serviceNodePort: 30001
   server:
     standalone:
       enabled: true

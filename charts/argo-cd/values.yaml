@@ -1,0 +1,4 @@
+imagepullsecret-patcher:
+  conf:
+    debug: true
+    secretName: ghcr
